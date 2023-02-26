@@ -3,13 +3,16 @@
     --background: #d7d7d7;
     --primary: #eee;
     --secondary: #e1e1e1;
+    --color: #54428E;
     --border: #ccc;
-    --border-search: #FF5964;
     --text: #111;
+    --subtext: #999;
     --hover-primary: #fff;
     --hover-secoundary: #f2f2f2;
+    --hover-color: #7965B8;
     --hover-border: #dfdfdf;
-    --hover-text: #333
+    --hover-text: #333;
+    --hover-subtext: #aaa;
 }
 
 /* default */
@@ -17,13 +20,16 @@
     --background: #000;
     --primary: #1a1a1a;
     --secondary: #0f0f0f;
+    --color: #9A89D2;
     --border: #2a2a2a;
-    --border-search: #40ACDD;
-    --text: #ccc;
+    --text: #dfdfdf;
+    --subtext: #777;
     --hover-primary: #2b2b2b;
-    --hover-secoundary: #202020;
+    --hover-secondary: #202020;
+    --hover-color: #A697D8;
     --hover-border: #3b3b3b;
-    --hover-text: #bbb
+    --hover-text: #bbb;
+    --hover-subtext: #666;
 }
 
 /* Special START */
@@ -31,26 +37,32 @@
     --background: #000;
     --primary: #000;
     --secondary: #000;
+    --color: #0f6;
     --border: #0ff;
-    --border-search: #f03;
     --text: #0f0;
+    --subtext: #393;
     --hover-primary: #000;
-    --hover-secoundary: #000;
+    --hover-secondary: #000;
+    --hover-color:;
     --hover-border: #f33;
     --hover-text: #ff0;
+    --hover-subtext: ;
 }
 
 :root[data-theme="aternos"] {
     --background: #161C21;
     --primary: #2D3943;
     --secondary: #161C21;
+    --color: #2B87D3;
     --border: #242E36;
-    --border-search: #2B87D3;
     --text: #F0F0F0;
+    --subtext: #ABABAB;
     --hover-primary: #47535D;
-    --hover-secoundary: #29343D;
+    --hover-secondary: #29343D;
+    --hover-color: #33A3FF;
     --hover-border: #394956;
     --hover-text: #ddd;
+    --hover-subtext: #999;
 }
 /* Special END */
 /* THEMES END */
@@ -63,6 +75,9 @@ nav {
     position: fixed;
     top: 0;
     border-bottom: 5px solid var(--border);
+    transition: ease-in-out 0.33s;
+    transition-property: background-color border-color;
+    z-index: 1000;
 }
 
 nav > .logo {
@@ -78,4 +93,5 @@ img {
 body {
     margin: calc(65px + 0.5vw) 0 0 0;
     background-color: var(--background);
+    transition: background-color ease-in-out 0.33s;
 }
