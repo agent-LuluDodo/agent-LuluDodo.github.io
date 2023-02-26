@@ -1,0 +1,81 @@
+/* THEMES */
+:root[data-theme="light"] {
+    --background: #d7d7d7;
+    --primary: #eee;
+    --secondary: #e1e1e1;
+    --border: #ccc;
+    --border-search: #FF5964;
+    --text: #111;
+    --hover-primary: #fff;
+    --hover-secoundary: #f2f2f2;
+    --hover-border: #dfdfdf;
+    --hover-text: #333
+}
+
+/* default */
+:root[data-theme="dark"] {
+    --background: #000;
+    --primary: #1a1a1a;
+    --secondary: #0f0f0f;
+    --border: #2a2a2a;
+    --border-search: #40ACDD;
+    --text: #ccc;
+    --hover-primary: #2b2b2b;
+    --hover-secoundary: #202020;
+    --hover-border: #3b3b3b;
+    --hover-text: #bbb
+}
+
+/* Special START */
+:root[data-theme="neon"] {
+    --background: #000;
+    --primary: #000;
+    --secondary: #000;
+    --border: #0ff;
+    --border-search: #f03;
+    --text: #0f0;
+    --hover-primary: #000;
+    --hover-secoundary: #000;
+    --hover-border: #f33;
+    --hover-text: #ff0;
+}
+
+:root[data-theme="aternos"] {
+    --background: #161C21;
+    --primary: #2D3943;
+    --secondary: #161C21;
+    --border: #242E36;
+    --border-search: #2B87D3;
+    --text: #F0F0F0;
+    --hover-primary: #47535D;
+    --hover-secoundary: #29343D;
+    --hover-border: #394956;
+    --hover-text: #ddd;
+}
+/* Special END */
+/* THEMES END */
+
+nav {
+    background-color: var(--primary);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    border-bottom: 5px solid var(--border);
+}
+
+nav > .logo {
+    height: 100%;
+    margin-left: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: calc(65px + 0.5vw) 0 0 0;
+    background-color: var(--background);
+}

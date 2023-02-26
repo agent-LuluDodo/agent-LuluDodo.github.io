@@ -1,1 +1,58 @@
+a.page {
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    margin: 0 auto 0.5vw auto;
+    background-color: var(--primary);
+    border: 5px solid var(--border);
+    border-radius: 4vw;
+    transition: ease-in-out 0.33s;
+    transition-property: background-color, border-color;
+}
 
+a.page[data-highlight] {
+    border: 7px solid var(--border-search) !important;
+}
+
+a.page > h1 {
+    color: var(--text);
+    font-family: Calibri, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--text-border);
+    margin: 3vw 3vw 0 3vw;
+    background-color: var(--secondary);
+    padding: 0.5vw;
+    border: 5px solid var(--border);
+    border-radius: 2vw;
+    transition: ease-in-out 0.33s;
+    transition-property: color, background-color, border-color;
+}
+
+a.page > img {
+    margin: 1.5vw auto 1.5vw auto;
+    width: 15vw;
+    display: block;
+    background-color: var(--secondary);
+    border: 5px solid var(--border);
+    border-radius: 4vw;
+    padding: 1vw;
+    transition: ease-in-out 0.33s;
+    transition-property: background-color, border-color;
+}
+
+a.page:hover {
+    background-color: var(--hover-primary);
+    border-color: var(--hover-border);
+}
+
+a.page:hover > img {
+    background-color: var(--hover-secoundary);
+    border-color: var(--hover-border);
+}
+
+a.page:hover > h1 {
+    color: var(--hover-text);
+    background-color: var(--hover-secoundary);
+    border-color: var(--hover-border);
+}
